@@ -1,8 +1,13 @@
-all: threads
+PROGRAMS = threads
 
-threads:
-	cc -Wall -ansi -pedantic -o threads threads.c
-	strip threads
+CC = cc
+CFLAGS=-Wall -ansi -pedantic
+LIBS=
 
-clean:
-	-rm threads
+all: $(PROGRAMS)
+
+.c: ; $(CC) $(CFLAGS) $@.c $(LIBS) -o $@
+	strip $@
+
+clean:	
+	rm $(PROGRAMS)
