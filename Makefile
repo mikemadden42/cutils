@@ -1,7 +1,7 @@
-PROGRAMS = threads
+PROGRAMS = standards threads
 
 CC = cc
-CFLAGS=-Wall -ansi -pedantic
+CFLAGS=-Wall -std=c11 -pedantic
 LIBS=
 
 all: $(PROGRAMS)
