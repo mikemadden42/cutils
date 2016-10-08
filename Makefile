@@ -1,4 +1,4 @@
-PROGRAMS = standards threads
+PROGRAMS = hello standards threads
 
 CC = cc
 CFLAGS=-Wall -std=c11 -pedantic
