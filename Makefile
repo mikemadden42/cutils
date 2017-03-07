@@ -1,4 +1,4 @@
-PROGRAMS = hello standards threads
+PROGRAMS = hello size standards threads
 
 CC = cc
 CFLAGS=-Wall -std=c11 -pedantic
@@ -9,5 +9,5 @@ all: $(PROGRAMS)
 .c: ; $(CC) $(CFLAGS) $@.c $(LIBS) -o $@
 	strip $@
 
-clean:	
+clean:
 	rm $(PROGRAMS)

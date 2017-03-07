@@ -6,6 +6,7 @@ add_definitions(-Wall -std=c11 -pedantic)
 
 set(PROGRAMS
     hello
+    size
     standards
     threads
     )
