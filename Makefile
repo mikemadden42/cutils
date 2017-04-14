@@ -1,7 +1,7 @@
 PROGRAMS = hello size standards threads
 
 CC = cc
-CFLAGS=-Wall -std=c11 -pedantic
+CFLAGS=-Wall -Wextra -O3 -std=c11 -pedantic -march=native
 LIBS=
 
 all: $(PROGRAMS)
