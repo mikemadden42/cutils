@@ -2,9 +2,9 @@
 
 int main(void) {
 #ifdef __STDC_NO_THREADS__
-  printf("NO THREADS!\n");
+    printf("NO THREADS!\n");
 #else
-  printf("THREADS!\n");
+    printf("THREADS!\n");
 #endif
-  return 0;
+    return 0;
 }

@@ -5,6 +5,6 @@
 #include <stdio.h>
 
 int main(void) {
-  printf("sizeof(size_t) = %zu\n", sizeof(size_t));
-  return 0;
+    printf("sizeof(size_t) = %zu\n", sizeof(size_t));
+    return 0;
 }
