@@ -2,7 +2,8 @@ cmake_minimum_required(VERSION 2.8)
 
 project(cyber C)
 
-add_definitions(-Wall -std=c11 -pedantic)
+set (CMAKE_C_STANDARD 11)
+set(CMAKE_C_FLAGS "-Wall -Wextra -pedantic")
 
 set(PROGRAMS
     hello
