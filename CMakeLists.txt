@@ -3,7 +3,9 @@ cmake_minimum_required(VERSION 2.8)
 project(cyber C)
 
 set(CMAKE_C_STANDARD 11)
-set(CMAKE_C_FLAGS "-Wall -Wextra -pedantic")
+if (NOT MSVC)
+  set(CMAKE_C_FLAGS "-Wall -Wextra -pedantic")
+endif()
 
 set(PROGRAMS
   hello
