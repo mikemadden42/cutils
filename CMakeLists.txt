@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 2.8)
 
-project(cyber C)
+project(cutils C)
 
 set(CMAKE_C_STANDARD 11)
 if (NOT MSVC)
