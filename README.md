@@ -1,2 +1,2 @@
-# cyber
-CEH utils
+# cutils
+C utils
